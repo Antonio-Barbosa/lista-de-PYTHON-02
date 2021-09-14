@@ -1,0 +1,86 @@
+a=int(input('lado A: '))
+b=int(input('lado B: '))
+c=int(input('lado C: '))
+if a>b+c and b>c+a and c>b+a :
+    if a == b == c :
+        print ('Equilátero')
+    elif a == b or a == c or b == c:
+        print ('Isósceles')
+    else:
+        print ('Escaleno')
+else:
+    print ('Não e um triângulo')
+        
+ 
+a=int(input('Ano: '))
+if a % 4 == 0 and (a % 100 != 0 or a % 400 == 0) :
+    print('Bissexto')
+else:
+    print('Não bissexto')
+
+
+peso=float(input('Peso dos peixes pescados: '))
+excesso=peso-50
+multa=excesso*4
+if peso > 50:
+    print(f'Excesso de {excesso:.2f}')
+    print(f'Multa a ser paga R${multa:.2f}')
+elif peso <= 50:
+        print('Você não excedeu o peso, sua multa será R$ 0')
+    
+
+a=int(input('Primeiro número: '))
+b=int(input('Segundo número: '))
+c=int(input('Terceiro número: '))
+if a>b and a>c:
+    print(a)
+elif b>a and b>c:
+    print(b)
+elif c>b and c>a:
+    print(c)
+            
+
+a=int(input('Primeiro número: '))
+b=int(input('Segundo número: '))
+c=int(input('Terceiro número: '))
+if a>b or a>c:
+    print(f'Maior {a}')
+elif b>a or b>c:
+    print(f'Maior {b}' )
+elif c>b or c>a:
+    print(f'Maior {c}')
+if a<b or a<c:
+    print(f'Menor {a}')
+elif c<b or c<a:
+    print(f'Menor {c}')
+elif b<a or b<c:
+    print(f'Menor {b}')
+
+
+sh=float(input('Qual o salário hora? '))
+ht=float(input('Horas trabalhadas: '))
+sb=sh*ht
+ir=sb*11/100
+inss=sb*8/100
+s=sb*5/100
+sl=sb-ir-inss-s
+print (f'Salário bruto: R${sb:.3f}')
+print (f'Desconto IR: R${ir:.3f}')
+print (f'Desconto INSS: R${inss:.3f}')
+print (f'Desconto sindicato: R${s:.3f}')
+print (f'Salário liquido: R${sl:.3f}')
+
+metros=int(input('Quantos metros quadrados da área?')) 
+
+if metros % 54 == 0:
+   latas= metros / 54
+   print(f'Vai ser preciso {latas} latas de tinta para pintar a área, e o valor a ser pago será R${latas*80}')
+    
+else:
+    latas=int(metros/54) + 1
+    print(f'Vai ser preciso {latas} latas de tinta para pintar a área, e o valor a ser pago será R${latas*80}')
+    
+
+
+
+    
